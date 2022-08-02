@@ -2,10 +2,76 @@
     width: 100%;
     height: 100%;
     background-color: aliceblue;
-    background-image: url("../images/landing.jpg");
+    background-image: url("https://images.pexels.com/photos/1144690/pexels-photo-1144690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    
+    position: relative;
+    padding: 15px 0;
+}
+
+.H1Intro {
+    font-family: 'Playfair Display', serif;
+    padding-left: 10px;
+    position: absolute;
+    top: 12%;
+
+
+}
+
+.HeroH1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 3.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: 15%;
+    margin: 0;
+   
+}
+
+.IntroP {
+    font-size: 1.25rem;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    position: absolute;
+    top: 30%;
+}
+
+#light .HeroImg {
+    color: #e0c1b5;
+}
+
+#ActionBtn {
+    position: absolute;
+    top: 62%; 
+    font-size: 1.25rem;
+    padding: 10px 17.5px;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    background-color: #374a6c;
+    border: 1px solid #866778;
+    color: #ffffff
+}
+
+.Icons {
+    width: 40px;
+    height: 40px;
+}
+
+.IconDiv {
+    position: absolute;
+    bottom: 2%;
+    align-self: center;
+    justify-self: center;
+    gap: 15px;
 }

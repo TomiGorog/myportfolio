@@ -19,42 +19,182 @@
 /* background */
 
 #dark {
-  background-color: #222222;
+  /* background: linear-gradient(to top, #090b0f, #000000); */
+  background-image: url("./images/starbackground.jpg");
 }
 
 #light {
-  background-color: whitesmoke;
+  background-color: #f4f4f4;
 }
 
 /* actual styling */
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+html {
+  width: 100%;
 }
 
 .App {
-  font-family: "Ubuntu", sans-serif;
-  width: 100vw;
+  font-family: 'Titillium Web', sans-serif;
+  width: 100%;
   height: 100vh;
   /* display: flex;
   /* justify-content: center; */
   /* align-items: center; */
-  /* flex-direction: column; */ 
+  /* flex-direction: column; */
 }
 
-.main {
+.main,
+html,
+body {
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
+}
+
+.homecontainer {
+  width: 100%;
 }
 
 #dark .main {
-  color: whitesmoke
+  color: #ffffff;
+  color: #ffffff;
+  /* background-color: #090B0F; */
+  /* background: linear-gradient(to top, #090b0f, #000000); */
+  background-image: url("./images/starbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
 }
+
+#dark .homecontainer {
+  color: #ffffff;
+  color: #ffffff;
+  /* background-color: #090B0F; */
+  /* background: linear-gradient(to top, #090b0f, #000000); */
+  background-image: url("./images/starbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 
 #light .main {
-
+  color: #222222;
+  background-color: #ffffff;
 }
 
+#dark .about {
+  color: #ffffff;
+  color: #ffffff;
+  /* background-color: #090B0F; */
+  /* background: linear-gradient(to top, #090b0f, #000000); */
+  background-image: url("./images/starbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+
+#light .about {
+  color: #222222;
+  background-color: #ffffff;
+}
+
+#light .homecontainer {
+  color: #222222;
+  background-color: #ffffff;
+}
+
+
+#light .navigation {
+  color: #222222;
+  background-color: #ffffff;
+}
+
+#dark .navigation {
+  color: #ffffff;
+  /* background-color: #090B0F; */
+  /* background: linear-gradient(to top, #090b0f, #000000); */
+  background-image: url("./images/starbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+#light #landing {
+  color: #ffffff
+}
+
+#dark #landing {
+
+  color: #eff3f8
+}
+
+
+/* NAVIGATION  */
 .navigation {
-  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  /* padding-right:  15px;
+  padding-left: 15px; */
+ 
+ position: sticky;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  width: fit-content;
+  padding-left: 15px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+/* basic */
+
+a:visited,
+a:active,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: inherit
+}
+
+button {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+.about {
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  padding-left: 15px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  padding: 15px;
+}
+
+.highlighted {
+  /* color: #0071bc; */
+  color: lightseagreen;
+  font-size: 1.3em;
+  letter-spacing: 3px;
 }

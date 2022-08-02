@@ -1,9 +1,7 @@
 import React from 'react'
 import './App.css';
-import ReactSwitch from 'react-switch';
 import { Outlet } from 'react-router-dom'
 import Navigation from './Navigation';
-import Sidebar from './Sidebar';
 export const ThemeContext = React.createContext(null)
 function App() {
 
@@ -14,12 +12,13 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App" id={theme}>
-        <Navigation>
+      <div className="App" id="dark">
+        <div id="main">
 
-       
+        <Navigation>
         </Navigation>
         <Outlet />
+        </div>
       </div>
     </ThemeContext.Provider>
   );

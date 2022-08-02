@@ -1,3 +1,29 @@
-.Burger {
-  
+.TabsMenu {
+height: 50%;
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  padding: 0px 15px;
+letter-spacing: 1.5px;
 }
+
+/* .LogoSwitch {
+    height: 50%;
+      display: flex;
+      gap: 30px;
+      width: max-content;
+      justify-content: space-between;
+      align-items: center;
+    } */
+/*     
+.Switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+} */

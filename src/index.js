@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './About';
 import App from './App';
 import Home from './Home';
 import Landing from './Landing';
@@ -12,7 +13,7 @@ root.render(
 <Routes>
     <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="landing" element={<Landing />} />
+        <Route path="about" element={<About />} />
     </Route>
 </Routes>
 </BrowserRouter>

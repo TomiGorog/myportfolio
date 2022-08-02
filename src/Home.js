@@ -5,10 +5,8 @@ import Projects from './Projects'
 
 function Home() {
   return (
-    <div>Home
-      {/* <Landing /> */}
-      <About />
-      <Projects />
+    <div className='homecontainer'>
+      <Landing />
     </div>
   )
 }
