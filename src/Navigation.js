@@ -5,14 +5,18 @@ import NavStyle from './CSS-modules/NavigationStyles.module.css'
 import ReactSwitch from 'react-switch';
 
 import { ThemeContext } from './App'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 function Navigation() {
     const [isOpen, setOpen] = React.useState(false)
     let colorContext = React.useContext(ThemeContext)
-
+    let navigate = useNavigate()
     return (
         <div className='navigation'>
-                <div className='logo'>TGDev</div>
+                <div 
+                onClick={() => {
+                   navigate("/") 
+                }}
+                className='logo'>TGDev</div>
             {/* <div className={NavStyle.LogoSwitch}> */}
                 {/* <div className={NavStyle.Switch}>
                     {/* <label> {colorContext.theme === "light" ? "Light Mode" : "Dark Mode"}</label>

@@ -127,6 +127,16 @@ body {
   background-repeat: repeat;
 }
 
+#dark .contact {
+  color: #ffffff;
+  /* background-color: #090B0F; */
+  /* background: linear-gradient(to top, #090b0f, #000000); */
+  background-image: url("./images/starbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 #light #landing {
   color: #ffffff
 }
