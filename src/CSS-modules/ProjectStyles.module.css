@@ -1,9 +1,68 @@
-.Project {
-    background-color: darkgray
-
+.ProjectRnnR {
+    background-color: darkgray;
+    background-image: url("../images/DSC03798.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    
 }
 
-.Icons {
-    width: 30px;
-    height: 30px;
+.ProjectRnnR h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    color: #00c2ce;
+    position: absolute;
+    top: 5%;
+    
 }
+
+.ProjectRnnR .LinktoProject {
+    font-size: 1.5rem;
+    color: black;
+    text-align:center;
+    text-decoration: underline;
+    position: absolute;
+    top: 50%;
+}
+
+.KeySentence {
+  position: absolute;
+  top: 27%;
+  font-weight: 600;
+}
+
+.TechStack {
+bottom: 7%;
+position: absolute;
+padding: 0 30px;
+font-weight: 600;
+
+}
+.Icons, .Icons a {
+    width: 40px;
+    height: 40px;
+}
+
+
+.BottomLine {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    bottom: 0%;
+position: absolute;
+}
+
+/* .GrayLayer {
+    background-color: lightgray;
+    opacity: 0.2;
+} */
