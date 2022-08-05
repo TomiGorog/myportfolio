@@ -21,6 +21,7 @@
 #dark {
   /* background: linear-gradient(to top, #090b0f, #000000); */
   background-image: url("./images/starbackground.jpg");
+  color: #ffffff
 }
 
 #light {
@@ -84,10 +85,10 @@ body {
 }
 
 
-#light .main {
+/* #light .main {
   color: #222222;
   background-color: #ffffff;
-}
+} */
 
 #dark .about {
   color: #ffffff;
@@ -106,16 +107,16 @@ body {
   background-color: #ffffff;
 }
 
-#light .homecontainer {
+/* #light .homecontainer {
   color: #222222;
   background-color: #ffffff;
-}
+} */
 
 
-#light .navigation {
+/* #light .navigation {
   color: #222222;
   background-color: #ffffff;
-}
+} */
 
 #dark .navigation {
   color: #ffffff;
@@ -137,9 +138,9 @@ body {
   background-repeat: repeat;
 }
 
-#light #landing {
+/* #light #landing {
   color: #ffffff
-}
+} */
 
 #dark #landing {
 
@@ -156,7 +157,7 @@ body {
   width: 100%;
   /* padding-right:  15px;
   padding-left: 15px; */
- 
+  border-bottom: 2px solid #374a6c;
  position: sticky;
 }
 
@@ -204,7 +205,28 @@ p {
 
 .highlighted {
   /* color: #0071bc; */
-  color: lightseagreen;
-  font-size: 1.3em;
+  color: silver;
+  font-size: 1.1em;
   letter-spacing: 3px;
+  font-weight: 600;
+}
+
+
+.contact {
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 30px */
+}
+
+.contact h1 {
+  margin: 0;
+    padding: 0;
+}
+
+.projects {
+
 }

@@ -5,6 +5,7 @@ import About from './About';
 import App from './App';
 import Home from './Home';
 import Contact from './Contact';
+import Projects from './Projects';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Projects />} />
     </Route>
 </Routes>
 </BrowserRouter>

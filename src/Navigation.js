@@ -27,7 +27,7 @@ function Navigation() {
                 <Link to="about">About</Link>
                 <Link to="projects">Projects</Link>
                 <Link to="contact">Contact</Link>
-                <Link id="resume" to="resume">Resume</Link>
+                <a href="TamasGorog_Frontend_Developer.pdf" target="_blank" >Resume</a>
             </div>
 
         </div>

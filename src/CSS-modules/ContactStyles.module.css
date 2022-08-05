@@ -1,0 +1,59 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+   
+}
+
+
+.Form input {
+    padding-left: 10px;
+    font-size: 1.25em;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.Form input:focus {
+  
+  background-color:  white
+}
+
+.Form label {
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+.ActionBtn {
+    
+    font-size: 1.25rem;
+    padding: 10px 17.5px;
+    border-radius: 10px;
+    width: 80%;
+    display: block;
+    align-self: center;
+    background-color: #374a6c;
+    border: 1px solid #866778;
+    color: #ffffff
+}
+
+.Icons {
+    width: 50px;
+    height: 50px;
+}
+
+.AltContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.AltContact h3 {
+    font-size: 1.25em;
+}
+.AltContact p {
+    margin: 0;
+    padding: 0;
+}
