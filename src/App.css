@@ -203,6 +203,11 @@ p {
   padding: 15px;
 }
 
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .highlighted {
   /* color: #0071bc; */
   color: silver;
@@ -241,4 +246,14 @@ p {
   margin-top: 20px;
   padding: 0;
   
+}
+
+.me {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
 }

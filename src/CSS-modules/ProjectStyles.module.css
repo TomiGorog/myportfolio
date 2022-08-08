@@ -25,9 +25,10 @@
 
 .ProjectRnnR .LinktoProject {
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-align:center;
     text-decoration: underline;
+    font-weight: 600;
     position: absolute;
     top: 50%;
 }
@@ -66,3 +67,14 @@ position: absolute;
     background-color: lightgray;
     opacity: 0.2;
 } */
+
+.RnnR {
+    font-size: 1.5rem;
+    color: white;
+    text-align:center;
+}
+
+.RnnR li {
+    text-decoration: none;
+    list-style-type: none;
+}

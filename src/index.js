@@ -17,11 +17,8 @@ root.render(
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
-                <Route path="/projects" element={<Projects />}>
-                    <Route path="rnnr" element={<RnnRProject />} />
-                </Route>
-
-
+                <Route path="projects" element={<Projects />} />
+                <Route path="rnnr" element={<RnnRProject />} />
 
             </Route>
         </Routes>
