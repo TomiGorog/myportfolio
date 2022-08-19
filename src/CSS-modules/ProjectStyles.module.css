@@ -72,9 +72,16 @@ position: absolute;
     font-size: 1.5rem;
     color: white;
     text-align:center;
+    height: 100%;
 }
 
 .RnnR li {
     text-decoration: none;
     list-style-type: none;
+}
+
+.SubTitle {
+    margin: 0;
+    text-align: center;
+    width: 100%;
 }
