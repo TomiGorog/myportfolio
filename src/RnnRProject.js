@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectStyle from './CSS-modules/ProjectStyles.module.css'
+import Pagedown from './Pagedown'
 
 function RnnRProject() {
   return (
@@ -111,6 +112,8 @@ function RnnRProject() {
         <li>Package tracking email</li>
         <li>Reviewing runners</li>
         </ol>
+
+       <Pagedown />
     </div>
   )
 }
