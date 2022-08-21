@@ -3,6 +3,7 @@
     background-image: url("../images/DSC03798.jpg");
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,13 +31,14 @@
     text-decoration: underline;
     font-weight: 600;
     position: absolute;
-    top: 50%;
+    top: 60%;
 }
 
 .KeySentence {
   position: absolute;
   top: 27%;
   font-weight: 600;
+  text-align: center;
 }
 
 .TechStack {
@@ -75,13 +77,26 @@ position: absolute;
     height: 100%;
 }
 
+.RnnR h3 {
+    color:#00c2ce
+}
+.RnnR h4 {
+    margin-top: 15px
+}
 .RnnR li {
     text-decoration: none;
-    list-style-type: none;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
+    padding: 0 25px;
 }
 
 .SubTitle {
     margin: 0;
     text-align: center;
     width: 100%;
+}
+
+.RnnR .NoDot {
+    list-style-type: none;
 }
