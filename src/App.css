@@ -289,11 +289,24 @@ figcaption {
   text-align: center;
 }
 
-.leftarrow {
-  background-color: wheat;
-  color: red;
-  width: 40px;
-  height: 40px;
+.pagebottomcontainer {
+ 
+  display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+padding: 10px 25px;
+
+}
+
+.arrowtext {
+  font-size: 1rem;
+}
+
+.pagebottominnerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   /* start of medium tablet styles */
