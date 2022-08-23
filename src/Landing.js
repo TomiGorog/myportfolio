@@ -13,7 +13,8 @@ function Landing() {
           <h1 className={LandingStyle.HeroH1}>Tamas Gorog</h1>
           </div>
           <p className={LandingStyle.IntroP}>I am a junior front-end developer looking to be a part of a great team, building applications for the web while maintaining exceptional user experience and solving interesting challenges</p>
-          <button id={LandingStyle.ActionBtn} className="contactme">Contact me</button>
+          <button id={LandingStyle.ActionBtn} className="contactme">
+            <span>Contact me</span></button>
         </div>
         <div className={LandingStyle.IconDiv}>
           <a href="https://github.com/TomiGorog" target="_blank"><DiGithubBadge className={LandingStyle.Icons} /></a>

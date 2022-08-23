@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 55px;
+    gap: 3.4375rem;
     padding-top: 1rem;
 }
 
@@ -75,20 +75,22 @@
     /* position: absolute;
     top: 62%;  */
     font-size: 1.25rem;
-    padding: 10px 17.5px;
+    padding: 0.625rem 1.09375rem;
     border-radius: 10px;
     align-self: center;
     justify-self: center;
-    /* background-color: #374a6c; */
-    /* border: 1px solid #866778; */
-    border: 1px solid white;
+    
+    border: 0.0625rem solid white;
     background-image: linear-gradient(to left top, #3417A4, #9919bc);
-    color: #ffffff
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Icons {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .IconDiv {
@@ -100,10 +102,13 @@
   
 }
 
-@media screen and (min-width: 500px) {
-    .HeroImg {
-    
+@media screen and (min-width: 1024px) {
+    .Imgcontent {
+        padding: 0 10%;
+        gap: 4rem;
     } 
    
-     
+    #ActionBtn {
+        border: 2px solid white;
+    }
    }

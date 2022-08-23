@@ -11,7 +11,7 @@ function ScrollTop(props) {
             }
             }
             className='scrollToTop'>
-            <AiOutlineArrowUp size={40} />
+            <AiOutlineArrowUp size={50} />
 
         </div>
     )

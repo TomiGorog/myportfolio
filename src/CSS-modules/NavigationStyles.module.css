@@ -12,8 +12,7 @@ background-image: url("/src/images/pexels-kai-pilger-1341279.jpg") ;
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
-  position: sticky;
-  
+
 }
 
 /* .LogoSwitch {
@@ -35,11 +34,6 @@ background-image: url("/src/images/pexels-kai-pilger-1341279.jpg") ;
 } */
 
 @media screen and (min-width: 500px) {
- .TabsMenu {
-  font-size: 1.2em;
-  justify-content: space-evenly;
-
- } 
-
+ 
   
 }

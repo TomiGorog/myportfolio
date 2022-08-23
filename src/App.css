@@ -3,6 +3,7 @@
 :root {
   font-size: 16px;
 }
+
 .primary-light {
   color: #ffffff;
 }
@@ -40,7 +41,7 @@ html {
   font-family: 'Titillium Web', sans-serif;
   width: 100%;
   height: 100%;
-  background-image: url("/src/images/pexels-kai-pilger-1341279.jpg") ;
+  background-image: url("/src/images/pexels-kai-pilger-1341279.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
@@ -77,9 +78,7 @@ body {
   /* padding-right:  15px;
   padding-left: 15px; */
   border-bottom: 2px solid #ffffff;
- /* position: sticky;
- top: 0;
- z-index: 5; */
+
 }
 
 .logo {
@@ -87,9 +86,10 @@ body {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   width: fit-content;
-  padding-left: 1.25rem;
+  padding-left: 5%;
   height: 50%;
   display: flex;
+
   align-items: center;
 }
 
@@ -118,10 +118,12 @@ h2 {
   padding-left: 15px;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
+
 p {
   font-size: 1.25rem;
   line-height: 1.75;
@@ -131,7 +133,7 @@ p {
 li {
   font-size: 1rem;
   line-height: 1.75;
-  padding:  0 15px; 
+  padding: 0 15px;
   margin: 20px 0;
 }
 
@@ -139,6 +141,7 @@ ol li {
   padding: 0 15px;
   margin: 0;
 }
+
 h2 {
   font-size: 2rem;
   text-align: center;
@@ -169,7 +172,7 @@ h5 {
 
 .contact h1 {
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
 .projects {
@@ -179,14 +182,14 @@ h5 {
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  
+
 }
 
-.projects h1{
+.projects h1 {
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  
+
 }
 
 .me {
@@ -197,15 +200,16 @@ h5 {
 figcaption {
   font-style: italic;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .pagebottomcontainer {
- 
+
   display: flex;
-justify-content: space-between;
-align-items: center;
-height: 70px;
-padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 10px 25px;
 
 }
 
@@ -224,7 +228,8 @@ padding: 10px 25px;
   position: fixed;
   bottom: 5%;
   right: 1%;
-  color: #0071bc;
+  color: #ba55d3;
+
 }
 
 
@@ -236,15 +241,46 @@ padding: 10px 25px;
   :root {
     font-size: 18px;
   }
-  .logo {
-    padding-left: 2rem;
-    /* font-size: 2rem; */
-  }
 
-  
-  }
-@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 767px) {
+
   /* start of medium tablet styles */
+  :root {
+    font-size: 20px
+  }
+
+  figure {
+    float: left;
+    width: 40%
+  }
+
+  .textonleft {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 
   
+
+    /* .textonleft {
+      width: 40%;
+    } */
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 22px
   }
+
+  .about, .contact {
+    padding: 0 10%;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+}
