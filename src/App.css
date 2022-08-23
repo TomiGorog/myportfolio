@@ -46,10 +46,6 @@ html {
   background-repeat: repeat;
   color: #ffffff;
 
-  /* display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
 }
 
 
@@ -80,8 +76,10 @@ body {
   width: 100%;
   /* padding-right:  15px;
   padding-left: 15px; */
-  border-bottom: 2px solid #374a6c;
- position: sticky;
+  border-bottom: 2px solid #ffffff;
+ /* position: sticky;
+ top: 0;
+ z-index: 5; */
 }
 
 .logo {
@@ -89,7 +87,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   width: fit-content;
-  padding-left: 15px;
+  padding-left: 1.25rem;
   height: 50%;
   display: flex;
   align-items: center;
@@ -235,7 +233,13 @@ padding: 10px 25px;
 
 
 @media screen and (min-width: 500px) {
-  
+  :root {
+    font-size: 18px;
+  }
+  .logo {
+    padding-left: 2rem;
+    /* font-size: 2rem; */
+  }
 
   
   }

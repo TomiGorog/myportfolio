@@ -13,20 +13,27 @@
     overflow:hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: space-between;
     align-items: center;
     overflow-y: hidden;
     overflow-x: hidden;
-    position: relative
+    padding-top: 2rem;
 }
 
 .Imgcontent {
-    
+    /* background-color: #374a6c; */
+    height: 85vh;
     padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 55px;
+    padding-top: 1rem;
 }
 
 .H1Intro {
     font-family: 'Playfair Display', serif;
+    font-size: 1rem;
     /* padding-left: 10px; */
     /* position: absolute;
     top: 12%; */
@@ -72,8 +79,10 @@
     border-radius: 10px;
     align-self: center;
     justify-self: center;
-    background-color: #374a6c;
-    border: 1px solid #866778;
+    /* background-color: #374a6c; */
+    /* border: 1px solid #866778; */
+    border: 1px solid white;
+    background-image: linear-gradient(to left top, #3417A4, #9919bc);
     color: #ffffff
 }
 
@@ -83,16 +92,17 @@
 }
 
 .IconDiv {
-    position: absolute;
-    bottom: 2%;
-    /* align-self: bottom;
-    justify-self: center; */
+    /* position: absolute;
+    bottom: 2%; */
+    justify-self: bottom;
+    justify-self: center; 
     gap: 15px;
+  
 }
 
 @media screen and (min-width: 500px) {
     .HeroImg {
-     /* padding: 5%; */
+    
     } 
    
      

@@ -2,12 +2,18 @@
 height: 50%;
   display: flex;
   /* gap: 10px; */
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-family: 'Playfair Display', serif;
   font-size: 1rem;
   padding: 0px 15px;
 letter-spacing: 1.5px;
+background-image: url("/src/images/pexels-kai-pilger-1341279.jpg") ;
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  position: sticky;
+  
 }
 
 /* .LogoSwitch {
@@ -31,6 +37,8 @@ letter-spacing: 1.5px;
 @media screen and (min-width: 500px) {
  .TabsMenu {
   font-size: 1.2em;
+  justify-content: space-evenly;
+
  } 
 
   
