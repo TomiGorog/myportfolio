@@ -26,7 +26,7 @@ React.useEffect(() => {
 
   return (
     // <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App" id="dark">
+      <div className="App" >
         <div id="main">
 
         <Navigation>
