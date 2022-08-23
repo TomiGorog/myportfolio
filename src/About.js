@@ -22,7 +22,7 @@ function About() {
       </p>
     <figure>
       <img className="me" src={me} alt="Me doing what I like, eating"></img>
-    <figcaption>Me doing what I like to do, eating great local food</figcaption>
+    <figcaption>Me doing what I like to do, eating delicious thai food</figcaption>
     </figure>
       <p>
         <span className="highlighted">In my free time,</span> I enjoy playing percussion instruments and jamming with other musicians, travelling, 

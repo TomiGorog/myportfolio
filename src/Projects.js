@@ -16,7 +16,7 @@ function Projects() {
         <div className={ProjectStyles.BottomLine}>
 
         <a href="https://github.com/TomiGorog" target="_blank"><DiGithubBadge className={ProjectStyles.Icons} /></a>
-        <a href='#'><IoMdOpen className={ProjectStyles.Icons} /></a>
+        <a href='https://rnnr.vercel.app/'><IoMdOpen className={ProjectStyles.Icons} /></a>
         </div>
         </div>
     </div>

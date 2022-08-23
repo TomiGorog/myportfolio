@@ -1,25 +1,30 @@
 import React from 'react'
 import ProjectStyle from './CSS-modules/ProjectStyles.module.css'
 import Pagedown from './Pagedown'
-import { AiOutlineArrowLeft, AiOutlineArrowUp } from 'react-icons/ai';
-import {useNavigate} from "react-router-dom"
-import ScrollToTop from './ScrollToTop';
+
 
 function RnnRProject() {
-  let navigate = useNavigate()
-
-  const topOfPage = React.useRef(null);
-  const scrollUp = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-
-  };
-
-  const trialFunct = () => {
-    console.log("megye?")
+  const [showButton, setShowButton] = React.useState(false)
+  console.log(showButton)
+  const handleScrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
   }
+React.useEffect(() => {
+  console.log(window.scrollY)
+  const handleScrollButtonVisibility = () => {
+    window.scrollY > 300 && window.scrollY < 3200 ? setShowButton(true) : setShowButton(false)
+  }
+  window.addEventListener('scroll', handleScrollButtonVisibility)
+
+  return () => {
+    window.removeEventListener('scroll', handleScrollButtonVisibility)
+  }
+}, [])
+
+
   return (
     <div className={ProjectStyle.RnnR}>
-      <h2 ref={topOfPage} >RnnR</h2>
+      <h2 >RnnR</h2>
       <h3>Goals and beginning</h3>
       <p>During the projects' ideation phase we talked about potentional user groups,
         their motivations and the actions users have to take to react their goals:
@@ -126,9 +131,8 @@ function RnnRProject() {
         <li>Package tracking email</li>
         <li>Reviewing runners</li>
       </ol>
-     
-      <Pagedown  />
-      <ScrollToTop />
+      <Pagedown up={handleScrollToTop} />
+      
     </div>
   )
 
