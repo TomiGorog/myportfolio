@@ -2,15 +2,15 @@
     width: 100%;
     height: 100vh;
     min-width: 100%;
-    
+
     background-image: url("/src/images/landing1.jpg");
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom  center;
-    overflow:hidden;
+    background-position: bottom center;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,7 +52,7 @@
     /* position: absolute;
     top: 15%; */
     margin: 0;
-   
+
 }
 
 .IntroP {
@@ -71,22 +71,6 @@
     color: #e0c1b5;
 }
 
-#ActionBtn {
-    /* position: absolute;
-    top: 62%;  */
-    font-size: 1.25rem;
-    padding: 0.625rem 1.09375rem;
-    border-radius: 10px;
-    align-self: center;
-    justify-self: center;
-    
-    border: 0.0625rem solid white;
-    background-image: linear-gradient(to left top, #3417A4, #9919bc);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .Icons {
     width: 2.5rem;
@@ -97,18 +81,33 @@
     /* position: absolute;
     bottom: 2%; */
     justify-self: bottom;
-    justify-self: center; 
+    justify-self: center;
     gap: 15px;
-  
+
+}
+
+
+@media screen and (min-width: 500px) {
+    :root {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    :root {
+        font-size: 20px
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    :root {
+        font-size: 22px
+    }
+
     .Imgcontent {
         padding: 0 10%;
         gap: 4rem;
-    } 
-   
-    #ActionBtn {
-        border: 2px solid white;
     }
-   }
+
+}

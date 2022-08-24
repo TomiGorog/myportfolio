@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import RnnRProject from './RnnRProject';
 import Landing from './Landing';
+import Reply from './Reply';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
                 <Route path="/" element={<Landing/>} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="formsubmitted" element={<Reply />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="projects/rnnr" element={<RnnRProject />} />
 

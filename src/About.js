@@ -4,8 +4,6 @@ function About() {
   return (
     <div className='about'>
       <h2>About me</h2>
-      <div className='picneartext'>
-
         <p>
           <span className="highlighted">I began</span> my transition into tech in 2020 when I started to learn UX
           design because I wanted to work with digital products from the human side of things.
@@ -28,7 +26,6 @@ function About() {
           Something that shows my perseverance and diligence: I started my coding journey with the mobile learning app, Mimo
           and I was on a coding streak for 338 days &#40;gamification works on me I guess&#41;
         </p>
-      </div>
       <p>
         <span className="highlighted">In my free time,</span> I enjoy playing percussion instruments and jamming with other musicians, travelling,
         exploring different cultures and cuisines.

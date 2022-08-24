@@ -34,7 +34,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot}>Motivations: Cost effective delivery, quick delivery, customer satisfaction and on time delivery with control over the packages</li>
 
         <ol>
-          <h5>Needed to react the goals:</h5>
+          <h5>Actions to react the goals:</h5>
           <li>Registration / login, </li>
           <li>Upload package parameters, </li>
           <li>Give package to runner</li>
@@ -49,7 +49,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot}>Motivations: Financial goals, good review more job, instant job search</li>
 
         <ol>
-          <h5>Needed to react the goals:</h5>
+          <h5>Actions to react the goals:</h5>
           <li> Registration / login, </li>
           <li>Search for available packages </li>
           <li>Apply for the choosen package</li>
@@ -65,7 +65,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot} >Motivations: Intact package arriving on time, package tracking, reviewing delivery performance, cost effective delivery</li>
 
         <ol>
-          <h5>Needed to react the goals:</h5>
+          <h5>Actions to react the goals:</h5>
           <li>Access incoming package information with package tracking system</li>
           <li>Be able to successfully get the package from the runner</li>
         </ol>
@@ -75,7 +75,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot} >Motivations: Effectively oversee any package registration, delivery and modify or intercept if needed</li>
 
         <ol>
-          <h5>Needed to react the goals:</h5>
+          <h5>Actions to react the goals:</h5>
           <li>Ability to register packages or runner accounts</li>
           <li>Access, edit or delete runner or package data</li>
           <li>Link runner to package</li>

@@ -28,7 +28,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1rem;
   width: 100%;
 }
 
@@ -75,8 +75,8 @@ body {
   flex-direction: column;
   height: 100px;
   width: 100%;
-  /* padding-right:  15px;
-  padding-left: 15px; */
+  /* padding-right:  0.9375rem;
+  padding-left: 0.9375rem; */
   border-bottom: 2px solid #ffffff;
 
 }
@@ -109,13 +109,12 @@ button {
 }
 
 .about {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 h2 {
   font-size: 1.6rem;
-  letter-spacing: 2px;
-  padding-left: 15px;
+  letter-spacing: 0.125rem;
 }
 
 ul,
@@ -127,18 +126,18 @@ ol {
 p {
   font-size: 1.25rem;
   line-height: 1.75;
-  padding: 15px;
+  /* padding: 0.9375rem; */
 }
 
 li {
   font-size: 1rem;
   line-height: 1.75;
-  padding: 0 15px;
-  margin: 20px 0;
+  padding: 0 0.9375rem;
+  margin: 1.25rem 0;
 }
 
 ol li {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   margin: 0;
 }
 
@@ -148,7 +147,7 @@ h2 {
 }
 
 h5 {
-  margin: 10px;
+  margin: 0.625rem 0;
 }
 
 
@@ -156,7 +155,7 @@ h5 {
   /* color: #0071bc; */
   color: silver;
   font-size: 1.1em;
-  letter-spacing: 3px;
+  letter-spacing: 0.125rem;
   font-weight: 600;
 }
 
@@ -166,13 +165,22 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  /* gap: 30px */
+  justify-content: space-between;
 }
 
-.contact h1 {
-  margin: 0;
-  padding: 0;
+.replyform {
+  height: 100vh;
+}
+
+.replyform p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.replyform span {
+  display: block;
+  text-align: center;
+  padding-left: 15rem
 }
 
 .projects {
@@ -181,13 +189,12 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
-
+  gap: 1.25rem
 }
 
 .projects h1 {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   padding: 0;
 
 }
@@ -208,9 +215,9 @@ figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 10px 25px;
-
+  height: 4.375rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem
 }
 
 .arrowtext {
@@ -232,9 +239,28 @@ figcaption {
 
 }
 
+.actionbtn {
+  font-size: 1.25rem;
+  padding: 0.625rem 1.09375rem;
+  border-radius: 0.625rem;
+  align-self: center;
+  justify-self: center;
 
+  border: 0.0625rem solid white;
+  background-image: linear-gradient(to left top, #3417A4, #9919bc);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.about,
+.contact,
+.projects,
+.replyform {
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
 
 
 @media screen and (min-width: 500px) {
@@ -264,11 +290,15 @@ figcaption {
     padding-top: 0;
   }
 
-  
 
-    /* .textonleft {
-      width: 40%;
-    } */
+  .about,
+  .contact,
+  .projects,
+  .replyform {
+    padding: 0 7.5%;
+    padding-bottom: 5%;
+
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -276,11 +306,20 @@ figcaption {
     font-size: 22px
   }
 
-  .about, .contact {
+  .about,
+  .contact,
+  .projects,
+  .replyform {
     padding: 0 10%;
+    padding-bottom: 5%;
+
   }
 
   .logo {
     padding-left: 10%;
+  }
+
+  .actionbtn {
+    border: 2px solid white;
   }
 }
