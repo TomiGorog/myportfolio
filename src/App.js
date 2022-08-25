@@ -4,8 +4,20 @@ import { Outlet } from 'react-router-dom'
 import Navigation from './Navigation';
 import ScrollTop from './ScrollTop';
 export const ThemeContext = React.createContext(null)
-function App() {
 
+
+function App() {
+  // const listInnerRef = React.useRef();
+
+  // const onScroll = () => {
+  //   if (listInnerRef.current) {
+  //     const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
+  //     if (scrollTop + clientHeight === scrollHeight) {
+  //       // TO SOMETHING HERE
+  //       console.log('Reached bottom')
+  //     }
+  //   }
+  // };
 
   const [showButton, setShowButton] = React.useState(false)
   console.log(showButton)
@@ -13,9 +25,10 @@ function App() {
     window.scrollTo({top: 0, behavior: 'smooth'})
   }
 React.useEffect(() => {
-  console.log(window.scrollY)
   const handleScrollButtonVisibility = () => {
-    window.scrollY > 200 && window.scrollY < 3200 ? setShowButton(true) : setShowButton(false)
+    console.log(window.scrollY)
+    console.log(window.innerHeight)
+    window.scrollY > 200 && window.scrollY != window.innerHeight ? setShowButton(true) : setShowButton(false)
   }
   window.addEventListener('scroll', handleScrollButtonVisibility)
 
@@ -24,10 +37,14 @@ React.useEffect(() => {
   }
 }, [])
 
+
+
   return (
     // <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" >
-        <div id="main">
+        <div id="main"
+        // onScroll={() => onScroll()} ref={listInnerRef}
+        >
 
         <Navigation>
         </Navigation>

@@ -4,7 +4,7 @@ import { AiOutlineArrowUp } from 'react-icons/ai';
 function ScrollTop(props) {
 
     return (
-
+        
         <div
             onClick={() => {
                 props.up()
@@ -12,6 +12,7 @@ function ScrollTop(props) {
             }
             className='scrollToTop'>
             <AiOutlineArrowUp size={50} />
+            
 
         </div>
     )

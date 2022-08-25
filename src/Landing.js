@@ -13,7 +13,9 @@ function Landing() {
           <span className={LandingStyle.H1Intro}>Hello! My name is</span>
           <h1 className={LandingStyle.HeroH1}>Tamas Gorog</h1>
           </div>
-          <p className={LandingStyle.IntroP}>I am a junior front-end developer looking to be a part of a great team, building applications for the web while maintaining exceptional user experience and solving interesting challenges</p>
+          <p className={LandingStyle.IntroP}>I am a junior front-end developer building for the web.
+          <br></br>I strive for a great-looking UI and exceptional user experience but my passion in front-end development is developing functions, exploring and implementing and API-s.</p>
+
           <ActionBtn message={"Contact me"} />
         </div>
         <div className={LandingStyle.IconDiv}>
