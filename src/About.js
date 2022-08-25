@@ -2,19 +2,21 @@ import React from 'react'
 import me from './images/eating.jpg'
 function About() {
 
-    const listInnerRef = React.useRef();
-    const onScroll = () => {
-      if (listInnerRef.current) {
-        const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
-        if (scrollTop + clientHeight === scrollHeight) {
-          // TO SOMETHING HERE
-          console.log('Reached bottom')
-        }
-      }
-    };
+    // const listInnerRef = React.useRef();
+    
+    // const onScroll = () => {
+    //   if (listInnerRef.current) {
+    //     const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
+    //     if (scrollTop + clientHeight === scrollHeight) {
+    //       // TO SOMETHING HERE
+    //       console.log('Reached bottom')
+    //     }
+    //   }
+    // };
+
+    
   return (
     <div className='about'
-    onScroll={() => onScroll()} ref={listInnerRef}
 
     >
       <h2>About me</h2>

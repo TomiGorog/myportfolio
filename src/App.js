@@ -7,17 +7,11 @@ export const ThemeContext = React.createContext(null)
 
 
 function App() {
-  // const listInnerRef = React.useRef();
-
-  // const onScroll = () => {
-  //   if (listInnerRef.current) {
-  //     const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
-  //     if (scrollTop + clientHeight === scrollHeight) {
-  //       // TO SOMETHING HERE
-  //       console.log('Reached bottom')
-  //     }
-  //   }
-  // };
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+  const [windowSize, setWindowSize] = React.useState(getWindowSize());
 
   const [showButton, setShowButton] = React.useState(false)
   console.log(showButton)
@@ -28,7 +22,7 @@ React.useEffect(() => {
   const handleScrollButtonVisibility = () => {
     console.log(window.scrollY)
     console.log(window.innerHeight)
-    window.scrollY > 200 && window.scrollY != window.innerHeight ? setShowButton(true) : setShowButton(false)
+    window.scrollY > 200 ? setShowButton(true) : setShowButton(false)
   }
   window.addEventListener('scroll', handleScrollButtonVisibility)
 
@@ -37,7 +31,17 @@ React.useEffect(() => {
   }
 }, [])
 
+React.useEffect(() => {
+  function handleWindowResize() {
+    setWindowSize(getWindowSize());
+  }
 
+  window.addEventListener('resize', handleWindowResize);
+
+  return () => {
+    window.removeEventListener('resize', handleWindowResize);
+  };
+}, []);
 
   return (
     // <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -50,7 +54,7 @@ React.useEffect(() => {
         </Navigation>
         <Outlet />
         {showButton &&
-    <ScrollTop up={handleScrollToTop  } />
+    <ScrollTop up={handleScrollToTop} pageWidth={window.innerWidth} />
       }
         </div>
       </div>

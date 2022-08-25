@@ -4,13 +4,25 @@ import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import ActionBtn from './ActionBtn';
 function Landing() {
+
+  let titleRef = React.useRef()
+  function onRenderScroll() {
+    titleRef.current.scrollIntoView({ behavior: 'smooth' })
+}
+  React.useEffect(() => {
+    onRenderScroll()
+  })
   return (
     <main className='main'>
-      <div id="landing" className={LandingStyle.HeroImg}>
+      <div id="landing"
+      
+      className={LandingStyle.HeroImg}>
         <div className={LandingStyle.Imgcontent}>
           <div>
 
-          <span className={LandingStyle.H1Intro}>Hello! My name is</span>
+          <span 
+          ref={titleRef}
+          className={LandingStyle.H1Intro}>Hello! My name is</span>
           <h1 className={LandingStyle.HeroH1}>Tamas Gorog</h1>
           </div>
           <p className={LandingStyle.IntroP}>I am a junior front-end developer building for the web.

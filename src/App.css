@@ -235,9 +235,14 @@ figcaption {
   position: fixed;
   bottom: 5%;
   right: 1%;
-  color: #ba55d3;
+  /* color: #ba55d3; */
+  color: #8E05C2;
 
 }
+
+.scrollToTop:hover, .pagebottominnerbox:hover {
+  cursor:pointer;
+ }
 
 .actionbtn {
   font-size: 1.25rem;
@@ -245,7 +250,6 @@ figcaption {
   border-radius: 0.625rem;
   align-self: center;
   justify-self: center;
-
   border: 0.0625rem solid white;
   background-image: linear-gradient(to left top, #3417A4, #9919bc);
   color: #ffffff;
