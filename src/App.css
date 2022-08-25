@@ -81,6 +81,8 @@ body {
 
 }
 
+
+
 .logo {
   font-size: 1.75rem;
   font-family: 'Playfair Display', serif;
@@ -236,8 +238,7 @@ figcaption {
   bottom: 5%;
   right: 1%;
   /* color: #ba55d3; */
-  color: #8E05C2;
-
+  color: #F806CC;
 }
 
 .scrollToTop:hover, .pagebottominnerbox:hover {
@@ -257,7 +258,11 @@ figcaption {
   justify-content: center;
   align-items: center;
 }
-
+#activeTab {
+  color: #F806CC;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
 .about,
 .contact,
 .projects,
