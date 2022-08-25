@@ -1,46 +1,51 @@
 import React from 'react'
 
 import NavStyle from './CSS-modules/NavigationStyles.module.css'
-import { ThemeContext } from './App'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Navigation() {
-    // const [isOpen, setOpen] = React.useState(false)
-    // let colorContext = React.useContext(ThemeContext)
 
-    const [activeTab, setActiveTab] = React.useState(undefined)
 
+    const [activeTab, setActiveTab] = React.useState(0)
     let navigate = useNavigate()
+
+    React.useEffect(() => {
+        setActiveTab(JSON.parse(window.sessionStorage.getItem("activeTab")));
+      }, []);
+
+      React.useEffect(() => {
+        window.sessionStorage.setItem("activeTab", activeTab);
+      }, [activeTab]);
     return (
         <div className='navigation'>
                 <div 
                 onClick={() => {
                    navigate("/") 
-                   setActiveTab(undefined)
+                   setActiveTab(0)
                 }}
                 className='logo'>TGDev</div>
            
             <div className={NavStyle.TabsMenu}>
                 <Link onClick={() => {
-                    setActiveTab("about")
+                    setActiveTab(1)
                 }} 
                 to="about"
-                id={activeTab == "about" ? "activeTab" : ""}
+                id={activeTab == 1 ? "activeTab" : ""}
                 >About</Link>
                 <Link onClick={() => {
-                    setActiveTab("projects")
+                    setActiveTab(2)
                 }} 
                 to="projects"
-                id={activeTab == "projects" ? "activeTab" : ""}
+                id={activeTab == 2 ? "activeTab" : ""}
                 >Projects</Link>
                 <Link onClick={() => {
-                    setActiveTab("contact")
+                    setActiveTab(3)
                 }} 
                 to="contact"
-                id={activeTab == "contact" ? "activeTab" : ""}
+                id={activeTab == 3 ? "activeTab" : ""}
                 >Contact</Link>
                 
-                <a href="TamasGorog_Frontend_Developer.pdf" target="_blank" >Resume</a>
+                <a href="TamasGorog_Frontend_Developer" target="_blank" >Resume</a>
             </div>
 
         </div>

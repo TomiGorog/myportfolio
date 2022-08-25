@@ -1,9 +1,8 @@
 import React from 'react'
 import './App.css';
-import { Outlet, useParams } from 'react-router-dom'
+import { Outlet, u } from 'react-router-dom'
 import Navigation from './Navigation';
 import ScrollTop from './ScrollTop';
-export const TabContext = React.createContext()
 
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
     return { innerWidth, innerHeight };
   }
   const [windowSize, setWindowSize] = React.useState(getWindowSize());
-  const [activeTab, setActiveTab] = React.useState(undefined)
   const [showButton, setShowButton] = React.useState(false)
 
 
@@ -49,7 +47,6 @@ function App() {
   
 
   return (
-    <TabContext.Provider value={{ activeTab, setActiveTab }}>
       <div className="App" >
         <div id="main">
           <Navigation>
@@ -60,7 +57,6 @@ function App() {
           }
         </div>
       </div>
-    </TabContext.Provider>
   );
 
 }

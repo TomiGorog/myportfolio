@@ -241,7 +241,7 @@ figcaption {
   color: #F806CC;
 }
 
-.scrollToTop:hover, .pagebottominnerbox:hover {
+.scrollToTop:hover, .pagebottominnerbox:hover, .actionbtn:hover, .logo {
   cursor:pointer;
  }
 
