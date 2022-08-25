@@ -2,7 +2,7 @@ import React from 'react'
 
 import NavStyle from './CSS-modules/NavigationStyles.module.css'
 import { Link, useNavigate } from 'react-router-dom'
-
+import  Resume  from './CV/TamasGorog_Frontend_Developer.pdf'
 function Navigation() {
 
 
@@ -45,7 +45,7 @@ function Navigation() {
                 id={activeTab == 3 ? "activeTab" : ""}
                 >Contact</Link>
                 
-                <a href="TamasGorog_Frontend_Developer" target="_blank" >Resume</a>
+                <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
             </div>
 
         </div>
