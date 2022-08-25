@@ -45,7 +45,7 @@ function Navigation() {
                 id={activeTab == 3 ? "activeTab" : ""}
                 >Contact</Link>
                 
-                <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
+                <a href="https://drive.google.com/drive/folders/1Eu-6gGULSMrZgix-8wsU8O_bwHvKIZ4G?usp=sharing" target="_blank" >Resume</a>
             </div>
 
         </div>
