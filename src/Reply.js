@@ -1,10 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { TabContext } from './App'
 function Reply() {
     let navigate = useNavigate()
+    let tabContext = React.useContext(TabContext)
+
     React.useEffect(() => {
+      tabContext.setActiveTab(undefined)
         setTimeout(() => {
-            console.log("vissza a főoldalra")
             navigate("/")
         },5000)
     })

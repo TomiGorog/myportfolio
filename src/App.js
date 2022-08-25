@@ -1,66 +1,68 @@
 import React from 'react'
 import './App.css';
-import { Outlet } from 'react-router-dom'
+import { Outlet, useParams } from 'react-router-dom'
 import Navigation from './Navigation';
 import ScrollTop from './ScrollTop';
-export const ThemeContext = React.createContext(null)
+export const TabContext = React.createContext()
 
 
 function App() {
-  function getWindowSize() {
+
+  const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
   }
   const [windowSize, setWindowSize] = React.useState(getWindowSize());
-
+  const [activeTab, setActiveTab] = React.useState(undefined)
   const [showButton, setShowButton] = React.useState(false)
-  console.log(showButton)
+
+
+ 
   const handleScrollToTop = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'})
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-React.useEffect(() => {
-  const handleScrollButtonVisibility = () => {
-    console.log(window.scrollY)
-    console.log(window.innerHeight)
-    window.scrollY > 200 ? setShowButton(true) : setShowButton(false)
-  }
-  window.addEventListener('scroll', handleScrollButtonVisibility)
+  React.useEffect(() => {
+    const handleScrollButtonVisibility = () => {
+      window.scrollY > 200 ? setShowButton(true) : setShowButton(false)
+    }
+    window.addEventListener('scroll', handleScrollButtonVisibility)
 
-  return () => {
-    window.removeEventListener('scroll', handleScrollButtonVisibility)
-  }
-}, [])
+    return () => {
+      window.removeEventListener('scroll', handleScrollButtonVisibility)
+    }
+  }, [])
 
-React.useEffect(() => {
-  function handleWindowResize() {
-    setWindowSize(getWindowSize());
-  }
+  React.useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
 
-  window.addEventListener('resize', handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
 
-  return () => {
-    window.removeEventListener('resize', handleWindowResize);
-  };
-}, []);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+
+
+  
 
   return (
-    // <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <TabContext.Provider value={{ activeTab, setActiveTab }}>
       <div className="App" >
-        <div id="main"
-        // onScroll={() => onScroll()} ref={listInnerRef}
-        >
-
-        <Navigation>
-        </Navigation>
-        <Outlet />
-        {showButton &&
-    <ScrollTop up={handleScrollToTop} pageWidth={window.innerWidth} />
-      }
+        <div id="main">
+          <Navigation>
+          </Navigation>
+          <Outlet />
+          {showButton &&
+            <ScrollTop up={handleScrollToTop} pageWidth={window.innerWidth} />
+          }
         </div>
       </div>
-    // </ThemeContext.Provider>
+    </TabContext.Provider>
   );
-  
+
 }
 
 export default App;

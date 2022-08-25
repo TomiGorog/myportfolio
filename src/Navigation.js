@@ -19,12 +19,7 @@ function Navigation() {
                    setActiveTab(undefined)
                 }}
                 className='logo'>TGDev</div>
-            {/* <div className={NavStyle.LogoSwitch}> */}
-                {/* <div className={NavStyle.Switch}>
-                    {/* <label> {colorContext.theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-                    <ReactSwitch onChange={colorContext.toggleTheme} checked={colorContext.theme === "dark"} /> */}
-                {/* </div> */} 
-            {/* </div> */}
+           
             <div className={NavStyle.TabsMenu}>
                 <Link onClick={() => {
                     setActiveTab("about")
