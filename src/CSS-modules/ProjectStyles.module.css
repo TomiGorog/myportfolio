@@ -75,6 +75,10 @@ position: absolute;
     padding-right: 5%;
 }
 
+.Rnnr p {
+    text-align: center;
+}
+
 .RnnR h3 {
     color:#00c2ce
 }
@@ -97,6 +101,7 @@ position: absolute;
 
 .RnnR .NoDot {
     list-style-type: none;
+    text-align: center;
 }
 
 
@@ -115,7 +120,11 @@ position: absolute;
 
     .RnnR {
         padding: 0 7.5%;
+        
       }
+    .RnnR p {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1024px) {

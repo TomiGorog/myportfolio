@@ -46,7 +46,7 @@ React.useEffect(() => {
       </ul>
       <ul>
         <h4 className={ProjectStyle.SubTitle}>Runner</h4>
-        <li className={ProjectStyle.NoDot}>Motivations: Financial goals, good review more job, instant job search</li>
+        <li className={ProjectStyle.NoDot}>Motivations: Financial goals, good reviews, more job, instant job search</li>
 
         <ol>
           <h5>Actions to react the goals:</h5>
