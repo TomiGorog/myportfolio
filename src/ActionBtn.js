@@ -8,7 +8,7 @@ function ActionBtn(props) {
         <button 
         onClick={() => {
             // navigate(props.url)
-            navigate(props.url, { state: { fromSpecificPage: true } });
+            navigate(props.url, { state: { fromHome: true } });
         }}
         className="actionbtn">
             <span>{props.message}</span>

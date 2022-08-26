@@ -8,9 +8,15 @@ function Navigation() {
     let navigate = useNavigate()
     const { state } = useLocation();
 
-    const { fromSpecificPage } = state || {};
-    if (fromSpecificPage) {
-        console.log(fromSpecificPage)
+    const { fromHome } = state || {};
+    if (fromHome) {
+        console.log(fromHome)
+    } else {
+        console.log("hawads")
+    }
+    const { fromFormSubmit } = state || {};
+    if (fromFormSubmit) {
+        console.log(fromFormSubmit)
     } else {
         console.log("hawads")
     }
@@ -49,7 +55,7 @@ function Navigation() {
                     setActiveTab(3)
                 }}
                     to="contact"
-                    id={activeTab == 3 || fromSpecificPage ? "activeTab" : ""}
+                    id={activeTab == 3 || fromHome && !fromFormSubmit? "activeTab" : ""}
                 >Contact</Link>
 
                 <a href="https://drive.google.com/drive/folders/1Eu-6gGULSMrZgix-8wsU8O_bwHvKIZ4G?usp=sharing" target="_blank" >Resume</a>

@@ -5,7 +5,8 @@ function Reply() {
 
     React.useEffect(() => {
         setTimeout(() => {
-            navigate("/")
+            navigate("/", { state: { fromFormSubmit: true } });
+
         },5000)
     })
   return (
