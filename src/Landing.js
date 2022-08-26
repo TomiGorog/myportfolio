@@ -3,6 +3,7 @@ import LandingStyle from './CSS-modules/HeroStyles.module.css'
 import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import ActionBtn from './ActionBtn';
+
 function Landing() {
 
   

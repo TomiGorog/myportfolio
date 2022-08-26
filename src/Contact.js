@@ -3,10 +3,9 @@ import ContactStyles from './CSS-modules/ContactStyles.module.css'
 import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import ActionBtn from './ActionBtn';
-import Reply from './Reply';
 
 function Contact() {
-
+console.log(window.location)  
   const [formSent, setFormSent] = React.useState(false)
   return (
     <div className='contact'>

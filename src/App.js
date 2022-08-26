@@ -4,7 +4,6 @@ import { Outlet, u } from 'react-router-dom'
 import Navigation from './Navigation';
 import ScrollTop from './ScrollTop';
 
-
 function App() {
 
   const getWindowSize = () => {
@@ -15,7 +14,6 @@ function App() {
   const [showButton, setShowButton] = React.useState(false)
 
 
- 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -44,7 +42,7 @@ function App() {
 
 
 
-  
+
 
   return (
       <div className="App" >
