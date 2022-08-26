@@ -55,7 +55,7 @@ function Navigation() {
                     setActiveTab(3)
                 }}
                     to="contact"
-                    id={activeTab == 3 || fromHome && !fromFormSubmit? "activeTab" : ""}
+                    id={activeTab == 3 && !fromFormSubmit || fromHome && !fromFormSubmit? "activeTab" : ""}
                 >Contact</Link>
 
                 <a href="https://drive.google.com/drive/folders/1Eu-6gGULSMrZgix-8wsU8O_bwHvKIZ4G?usp=sharing" target="_blank" >Resume</a>
