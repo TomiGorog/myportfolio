@@ -10,7 +10,6 @@ function ActionBtn(props) {
             // navigate(props.url)
             navigate(props.url, { state: { fromSpecificPage: true } });
         }}
-        type="submit"
         className="actionbtn">
             <span>{props.message}</span>
         </button>

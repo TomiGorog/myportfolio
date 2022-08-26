@@ -3,14 +3,15 @@ import ContactStyles from './CSS-modules/ContactStyles.module.css'
 import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import ActionBtn from './ActionBtn';
+import { useNavigate } from 'react-router-dom';
 
 function Contact() {
-console.log(window.location)  
+  let navigate = useNavigate()
   const [formSent, setFormSent] = React.useState(false)
   return (
     <div className='contact'>
       <h2>Contact me</h2>
-      <form className={ContactStyles.Form} action="https://formsubmit.co/274853e0256b20038b8105f4fb12d38e" method="POST">
+      <form className={ContactStyles.Form} action="https://formsubmit.co/tamas.peter.gorog@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New enquiry!" />
         <input type="hidden" name="_next" value="https://tgdev.vercel.app/formsubmitted" />
         <input type="hidden" name="_captcha" value="false" />
@@ -19,9 +20,17 @@ console.log(window.location)
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder='Where should I reply to?' required />
         <label for="message">Your message:</label>
-        <textarea type="text" id="message" name="message" placeholder='What can I do for you?' required 
-        rows={5}/>
-      <ActionBtn onClick={() => setFormSent(true)} message={"Send message"}/>
+        <textarea type="text" id="message" name="message" placeholder='What can I do for you?' required
+          rows={5} />
+        <button
+          onClick={() => {
+            // navigate(props.url)
+            navigate("/formsubmitted");
+          }}
+          type="submit"
+          className="actionbtn">
+          <span>Send message</span>
+        </button>
       </form>
       <div className={ContactStyles.AltContact}>
         <h3>Alternatively, you can find me on:</h3>
