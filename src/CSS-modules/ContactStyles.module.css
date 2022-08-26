@@ -5,7 +5,7 @@
 }
 
 
-.Form input {
+.Form input, .Form textarea {
     padding-left: 0.625rem;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;

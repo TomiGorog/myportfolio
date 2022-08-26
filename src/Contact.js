@@ -12,14 +12,15 @@ console.log(window.location)
       <h2>Contact me</h2>
       <form className={ContactStyles.Form} action="https://formsubmit.co/274853e0256b20038b8105f4fb12d38e" method="POST">
         <input type="hidden" name="_subject" value="New enquiry!" />
-        <input type="hidden" name="_next" value="http://localhost:3000/formsubmitted" />
+        <input type="hidden" name="_next" value="https://tgdev.vercel.app/formsubmitted" />
         <input type="hidden" name="_captcha" value="false" />
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder='Where should I reply to?' required />
         <label for="message">Your message:</label>
-        <input type="text" id="message" name="message" placeholder='What can I do for you?' required />
+        <textarea type="text" id="message" name="message" placeholder='What can I do for you?' required 
+        rows={5}/>
       <ActionBtn onClick={() => setFormSent(true)} message={"Send message"}/>
       </form>
       <div className={ContactStyles.AltContact}>
