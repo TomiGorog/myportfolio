@@ -333,4 +333,10 @@ figcaption {
   .actionbtn {
     border: 2px solid white;
   }
+  .about {
+    overflow: hidden;
+  }
+  .me {
+    width: 90%
+  }
 }
