@@ -28,7 +28,7 @@ function Landing() {
           <h1 className={LandingStyle.HeroH1}>Tamas Gorog</h1>
           </div>
           <p className={LandingStyle.IntroP}>I am a junior front-end developer building for the web.
-          <br></br>I strive for a great-looking UI and exceptional user experience but my passion in front-end development is developing functions, exploring and implementing and API-s.</p>
+          <br></br>I strive for a great-looking UI and exceptional user experience but my passion in front-end development is developing functions, exploring and implementing API-s.</p>
 
           <ActionBtn url={"/contact"} message={"Contact me"}  />
         </div>

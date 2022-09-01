@@ -12,7 +12,7 @@ function About() {
           From the beginning of my coding journey I was sure that I want to learn and do front-end development.
           I have been learning on my own for a few months beside a full-time job in the hospitality industry.
           However, I have realized that my learning style needed some improvement, so, after I have saved enough,
-          I have quit my job and started the FrontEnd Development bootcamp at Progmatic Academy.
+          I have quit my job and started the Front-end Development bootcamp at Progmatic Academy.
           During an intense five month full-time course,</p>
         <figure>
           <img className="me" src={me} alt="Me doing what I like, eating"></img>

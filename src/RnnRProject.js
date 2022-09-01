@@ -89,26 +89,26 @@ React.useEffect(() => {
         we used the Kanban methodology with Trello cards. Our priorities often changed so sometimes we had midday meetings.
         We mostly worked in pairs or groups of three rotating the team members collaborating on a daily basis.
         We also often switched up the tasks, that way all of us had a great insight into the code.
-        For version tracking and documentation Github was used, after a trello card has been completed, the developers showed and explained the
+        For version tracking and documentation Git was used, after a Trello card has been completed, the developers showed and explained the
         code for the other devs in the team to double check and to help them understand the processes.
       </p>
       <h3>Technologies</h3>
       <p>As a front-end framework we worked with React.js. For visuals and layout we used CSS and HTML, striving for responsible web design
         and mobile first design with Flexbox and mediaqueries.
         We implemented APIs that we haven't worked before such as Google Maps Api for real time tracking package, and
-        runner positions with geolocation functions. We also introduced a checker which using GPS coordinates of the runner delivering the package and
-        the receiver address coordinates checks if the runner is close enough, considering the accuracy of the runner's device.
+        runner positions with geolocation functions. We also introduced a checker which is using GPS coordinates of the runner delivering the package and
+        the receiver address coordinates. It checks if the runner is close enough, considering the accuracy of the runner's device.
         We also added a QR-code scan based package reception,
         For the backend we planned and created a database in Firebase. We have used many fetch functions to create, read,
         edit, and delete data &#40;CRUD&#41;. We strived to optimalize the web-app, so we only used realtime fetch functions when the rerender of a DOM was an absolute must for the user experience.
-        To limit the number of sent HTTP requests, we refreshed the data after a successful data fetch on the client-side, instead of rerendering everything from the server.
+        To limit the number of sent HTTP requests, we refreshed the data after a successful data fetch on the client-side, instead of rerendering everything from the server with array function.
         We used Firebase authentication to register, login and keep users logged in.
       </p>
       <h3>My role</h3>
       <p>All of us in the team worked on every user function and on the UI as well, however there were tasks where I had more work invested such as:
         In the implementation of the Google Maps Api, the realtime GPS Tracking system, the distance verifying when deliverying packages, QR-code delivery
         or identifying and  refactoring the functions that requiered realtime Firebase data modifications. Also with the basic UI styles and dashboards.
-        Other than that I have put a lot of effort to help out my teammates, explain the logic behind the solutions, organize and follow up tasks, ideate on possible solutions and to try to oversee the entire codebase as
+        Other than that I have put a lot of effort to help out my teammates, explain the logic behind the solutions, organize and follow-up tasks, ideate on possible solutions and to try to oversee the entire codebase as
         much as possible.
       </p>
       <h3>Key takeaways</h3>
