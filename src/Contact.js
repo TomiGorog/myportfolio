@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom';
 function Contact() {
   let navigate = useNavigate()
   const [formSent, setFormSent] = React.useState(false)
+  const [userMessage, setUserMessage] = React.useState(null)
+
   return (
     <div className='contact'>
       <h2>Contact me</h2>
@@ -20,12 +22,17 @@ function Contact() {
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder='Where should I reply to?' required />
         <label for="message">Your message:</label>
-        <textarea type="text" id="message" name="message" placeholder='What can I do for you?' required
+        <textarea onChange={(e) => {
+          setUserMessage(e.target.value)
+          console.log(userMessage)
+        }} type="text" id="message" name="message" placeholder='What can I do for you?' required
           rows={5} />
         <button
-          onClick={() => {
+          onClick={(e) => {
             // navigate(props.url)
-            navigate("/formsubmitted");
+            // navigate("/formsubmitted");
+            console.log(e.target)
+            submit()
           }}
           type="submit"
           className="actionbtn">
@@ -42,6 +49,23 @@ function Contact() {
       </div>
     </div>
   )
+
+  function submit (userMessage) {
+    fetch("https://formsubmit.co/ajax/tamas.peter.gorog@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: "FormSubmit",
+        message: userMessage
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+  }
 }
 
 export default Contact
