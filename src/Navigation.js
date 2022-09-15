@@ -12,14 +12,11 @@ function Navigation() {
     if (fromHome) {
         console.log(fromHome)
     } else {
-        console.log("hawads")
     }
     const { fromFormSubmit } = state || {};
     if (fromFormSubmit) {
-        console.log(fromFormSubmit)
-    } else {
-        console.log("hawads")
-    }
+        console.log(fromFormSubmit, "form submitted succesfully")
+    } 
 
     React.useEffect(() => {
         setActiveTab(JSON.parse(window.sessionStorage.getItem("activeTab")));
@@ -28,7 +25,6 @@ function Navigation() {
     React.useEffect(() => {
         window.sessionStorage.setItem("activeTab", activeTab);
     }, [activeTab]);
-    console.log(activeTab)
     return (
         <div className='navigation'>
             <div
