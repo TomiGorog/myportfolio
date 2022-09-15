@@ -14,7 +14,13 @@ function Contact() {
   return (
     <div className='contact'>
       <h2>Contact me</h2>
-      
+      <form onSubmit={(event) => formSubmit(event)} 
+      className={ContactStyles.Form} 
+      action="https://formsubmit.co/tamas.peter.gorog@gmail.com" method="POST"
+      >
+        <input type="hidden" name="_subject" value="New enquiry!" />
+        <input type="hidden" name="_next" value="https://tgdev.vercel.app/formsubmitted" />
+        <input type="hidden" name="_captcha" value="false" />
         <label for="name">Name:</label>
         <input onChange={(e) => {
           setUserName(e.target.value)
@@ -41,7 +47,7 @@ function Contact() {
           className="actionbtn">
           <span>Send message</span>
         </button>
- 
+      </form>
       <div className={ContactStyles.AltContact}>
         <h3>Alternatively, you can find me on:</h3>
         <div>
@@ -55,21 +61,6 @@ function Contact() {
 
  function formSubmit(event) {
     event.preventDefault();
-    fetch("https://formsubmit.co/ajax/your@email.com", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-        name: userName,
-        email: userEmail,
-        message: userMessage
-    })
-})
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error));
     // your submit logic
   }
   

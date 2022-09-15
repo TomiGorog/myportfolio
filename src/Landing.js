@@ -30,7 +30,9 @@ function Landing() {
           <p className={LandingStyle.IntroP}>I am a junior front-end developer building for the web.
           <br></br>I strive for a great-looking UI and exceptional user experience but my passion in front-end development is developing functions, exploring and implementing API-s.</p>
 
-          <ActionBtn url={"/contact"} message={"Contact me"}  />
+          <ActionBtn 
+          // url={"/contact"}
+           message={"Read my resume"}  />
         </div>
         <div className={LandingStyle.IconDiv}>
           <a href="https://github.com/TomiGorog" target="_blank"><DiGithubBadge className={LandingStyle.Icons} /></a>

@@ -5,14 +5,15 @@ function ActionBtn(props) {
     let navigate = useNavigate()
 
     return (
-        <button 
+        <a target="_blank"
+        href='https://drive.google.com/drive/folders/1Eu-6gGULSMrZgix-8wsU8O_bwHvKIZ4G?usp=sharing'
         onClick={() => {
             // navigate(props.url)
-            navigate(props.url, { state: { fromHome: true } });
+            // // navigate(props.url, { state: { fromHome: true } });
         }}
         className="actionbtn">
             <span>{props.message}</span>
-        </button>
+        </a>
 
     )
 }

@@ -47,12 +47,12 @@ function Navigation() {
                     to="projects"
                     id={activeTab == 2 ? "activeTab" : ""}
                 >Projects</Link>
-                <Link onClick={() => {
+                {/* <Link onClick={() => {
                     setActiveTab(3)
                 }}
                     to="contact"
                     id={activeTab == 3 && !fromFormSubmit || fromHome && !fromFormSubmit? "activeTab" : ""}
-                >Contact</Link>
+                >Contact</Link> */}
 
                 <a href="https://drive.google.com/drive/folders/1Eu-6gGULSMrZgix-8wsU8O_bwHvKIZ4G?usp=sharing" target="_blank" >Resume</a>
             </div>

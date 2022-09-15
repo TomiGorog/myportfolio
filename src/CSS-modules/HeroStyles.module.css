@@ -80,8 +80,8 @@
 .IconDiv {
     /* position: absolute;
     bottom: 2%; */
-    justify-self: bottom;
-    justify-self: center;
+    /* justify-self: bottom;
+    justify-self: center; */
     gap: 15px;
 
 }
