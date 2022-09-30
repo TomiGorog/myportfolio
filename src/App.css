@@ -254,7 +254,10 @@ figcaption {
   padding-bottom: 5%;
 }
 
-
+a.accented {
+  color: #F806CC;
+font-style: italic;
+}
 
 @media screen and (min-width: 500px) {
   :root {

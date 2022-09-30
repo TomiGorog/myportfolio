@@ -2,6 +2,7 @@ import React from 'react'
 import LandingStyle from './CSS-modules/HeroStyles.module.css'
 import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
 import ActionBtn from './ActionBtn';
 
 function Landing() {
@@ -34,7 +35,9 @@ function Landing() {
           // url={"/contact"}
            message={"Read my resume"}  />
         </div>
+        
         <div className={LandingStyle.IconDiv}>
+          <a href="mailto:tamas.peter.gorog@gmail.com"><HiOutlineMail className={LandingStyle.Icons}></HiOutlineMail></a>
           <a href="https://github.com/TomiGorog" target="_blank"><DiGithubBadge className={LandingStyle.Icons} /></a>
           <a href="https://www.linkedin.com/in/tamas-gorog-354369177/" target="_blank"><AiOutlineLinkedin className={LandingStyle.Icons} /></a>
         </div>

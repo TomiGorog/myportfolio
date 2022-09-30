@@ -14,7 +14,7 @@ function Projects() {
         <h3 className={ProjectStyles.TechStack}>React, JS, HTML, CSS, Google Maps Api, QR, REST, Firebase, git</h3>
         <div className={ProjectStyles.BottomLine}>
           <a href="https://github.com/TomiGorog" target="_blank"><DiGithubBadge className={ProjectStyles.Icons} /></a>
-          <a href='https://rnnr.vercel.app/'><IoMdOpen className={ProjectStyles.Icons} /></a>
+          <a href='https://rnnr.vercel.app/' target="_blank"><IoMdOpen className={ProjectStyles.Icons} /></a>
         </div>
       </div>
     </div>
