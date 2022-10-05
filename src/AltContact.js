@@ -14,9 +14,9 @@ function Contact() {
   return (
     <div className='contact'>
       <h2>Contact me</h2>
-      <form onSubmit={(event) => formSubmit(event)} 
-      className={ContactStyles.Form} 
-      action="https://formsubmit.co/tamas.peter.gorog@gmail.com" method="POST"
+      <form onSubmit={(event) => formSubmit(event)}
+        className={ContactStyles.Form}
+        action="https://formsubmit.co/tamas.peter.gorog@gmail.com" method="POST"
       >
         <input type="hidden" name="_subject" value="New enquiry!" />
         <input type="hidden" name="_next" value="https://tgdev.vercel.app/formsubmitted" />
@@ -24,7 +24,6 @@ function Contact() {
         <label for="name">Name:</label>
         <input onChange={(e) => {
           setUserName(e.target.value)
-          console.log(userName)
         }} type="text" id="name" name="name" placeholder="Your name" required />
         <label for="email">Email:</label>
         <input onChange={(e) => {
@@ -33,7 +32,6 @@ function Contact() {
         <label for="message">Your message:</label>
         <textarea onChange={(e) => {
           setUserMessage(e.target.value)
-          console.log(userMessage)
         }} type="text" id="message" name="message" placeholder='What can I do for you?' required
           rows={5} />
         <button
@@ -41,7 +39,7 @@ function Contact() {
             // navigate(props.url)
             formSubmit(event)
             navigate("/formsubmitted");
-           
+
           }}
           type="submit"
           className="actionbtn">
@@ -59,11 +57,11 @@ function Contact() {
     </div>
   )
 
- function formSubmit(event) {
+  function formSubmit(event) {
     event.preventDefault();
     // your submit logic
   }
-  
+
 }
 
 export default Contact

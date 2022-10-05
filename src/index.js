@@ -8,6 +8,7 @@ import Projects from './Projects';
 import RnnRProject from './RnnRProject';
 import Landing from './Landing';
 import Reply from './Reply';
+import TodoListProject from './TodoListProject';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +22,7 @@ root.render(
                 <Route path="formsubmitted" element={<Reply />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="projects/rnnr" element={<RnnRProject />} />
-
+                <Route path="projects/todolist" element={<TodoListProject />} />
             </Route>
         </Routes>
     </BrowserRouter>

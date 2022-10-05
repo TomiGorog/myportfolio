@@ -5,21 +5,19 @@ import Pagedown from './Pagedown'
 
 function RnnRProject() {
   const [showButton, setShowButton] = React.useState(false)
-  console.log(showButton)
   const handleScrollToTop = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'})
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-React.useEffect(() => {
-  console.log(window.scrollY)
-  const handleScrollButtonVisibility = () => {
-    window.scrollY > 300 && window.scrollY < 3200 ? setShowButton(true) : setShowButton(false)
-  }
-  window.addEventListener('scroll', handleScrollButtonVisibility)
+  React.useEffect(() => {
+    const handleScrollButtonVisibility = () => {
+      window.scrollY > 300 && window.scrollY < 3200 ? setShowButton(true) : setShowButton(false)
+    }
+    window.addEventListener('scroll', handleScrollButtonVisibility)
 
-  return () => {
-    window.removeEventListener('scroll', handleScrollButtonVisibility)
-  }
-}, [])
+    return () => {
+      window.removeEventListener('scroll', handleScrollButtonVisibility)
+    }
+  }, [])
 
 
   return (
@@ -27,14 +25,14 @@ React.useEffect(() => {
       <h2 >RnnR</h2>
       <h3>Goals and beginning</h3>
       <p>During the projects' ideation phase we talked about potentional user groups,
-        their motivations and the actions users have to take to react their goals:
+        their motivations and the actions users have to take to reach their goals:
       </p>
       <ul>
         <h4 className={ProjectStyle.SubTitle}>Sender</h4>
         <li className={ProjectStyle.NoDot}>Motivations: Cost effective delivery, quick delivery, customer satisfaction and on time delivery with control over the packages</li>
 
         <ol>
-          <h5>Actions to react the goals:</h5>
+          <h5>Actions required to reach the goals:</h5>
           <li>Registration / login, </li>
           <li>Upload package parameters, </li>
           <li>Give package to runner</li>
@@ -49,7 +47,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot}>Motivations: Financial goals, good reviews, more job, instant job search</li>
 
         <ol>
-          <h5>Actions to react the goals:</h5>
+          <h5>Actions required to reach the goals:</h5>
           <li> Registration / login, </li>
           <li>Search for available packages </li>
           <li>Apply for the choosen package</li>
@@ -65,7 +63,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot} >Motivations: Intact package arriving on time, package tracking, reviewing delivery performance, cost effective delivery</li>
 
         <ol>
-          <h5>Actions to react the goals:</h5>
+          <h5>Actions required to reach the goals:</h5>
           <li>Access incoming package information with package tracking system</li>
           <li>Be able to successfully get the package from the runner</li>
         </ol>
@@ -75,7 +73,7 @@ React.useEffect(() => {
         <li className={ProjectStyle.NoDot} >Motivations: Effectively oversee any package registration, delivery and modify or intercept if needed</li>
 
         <ol>
-          <h5>Actions to react the goals:</h5>
+          <h5>Actions required to reach the goals:</h5>
           <li>Ability to register packages or runner accounts</li>
           <li>Access, edit or delete runner or package data</li>
           <li>Link runner to package</li>

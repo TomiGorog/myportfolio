@@ -1,9 +1,5 @@
-.ProjectRnnR {
-    background-color: darkgray;
-    background-image: url("../images/DSC03798.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.ProjectTemplate {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,24 +10,46 @@
     
 }
 
-.ProjectRnnR h2 {
+#ProjectRnnR {   
+    background-image: url("../images/DSC03798.jpg");
+    background-color: darkgray;
+   
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ProjectTodolist {   
+    background-image: url("../images/todolist3.jpg");   
+    background-color: darkgray;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black    
+}
+.ProjectTemplate h2 {
     font-size: 3rem;
     padding: 0;
     margin: 0;
-    color: #00c2ce;
     position: absolute;
     top: 5%;
     
 }
+.ProjectTemplate#ProjectRnnR h2 {
+    color: #00c2ce;
 
-.ProjectRnnR .LinktoProject {
+}
+.ProjectTemplate .LinktoProject {
     font-size: 1.5rem;
-    color: white;
     text-align:center;
     text-decoration: underline;
     font-weight: 600;
     position: absolute;
     top: 60%;
+}
+
+.ProjectTemplate#ProjectRnnR .LinktoProject {
+    color: white;
+
 }
 
 .KeySentence {
@@ -104,6 +122,21 @@ position: absolute;
     text-align: center;
 }
 
+.TodoListList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0 2rem 0;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+.TodoListList li{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.25rem;
+
+   
+}
 
 @media screen and (min-width: 500px) {
     :root {
