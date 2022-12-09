@@ -29,7 +29,7 @@ function Landing() {
           <h1 className={LandingStyle.HeroH1}>Tamas Gorog</h1>
           </div>
           <p className={LandingStyle.IntroP}>I am a junior front-end developer building for the web.<br></br>
-          I have gained experience with React during and after a front end bootcamp but since October, I'm learning and working with Angular and TypeScript. In the future, I would like to master (one of) those frameworks while working on exciting projects.
+          I have gained experience with React during and after a front end bootcamp but since October, I'm learning and working with Angular and TypeScript. In the future, I would like to master web development while I'm working on exciting projects.
           </p>
 
           <ActionBtn 
