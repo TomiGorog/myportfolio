@@ -9,7 +9,8 @@ function Projects() {
     keySentence: "Community-based delivery webapplication",
     techStack: "React, JS, HTML, CSS, Google Maps Api, QR, REST, Firebase, git", 
     detailURL: "rnnr", 
-    liveLink: 'https://rnnr.vercel.app/'
+    liveLink: 'https://rnnr.vercel.app/',
+    repo: true
   }
   const todoListProject = {
     id: ProjectStyles.ProjectTodolist,
@@ -17,15 +18,17 @@ function Projects() {
     keySentence: "SPA to manage your daily tasks",
     techStack: "React, JS, HTML, CSS, git, Styled components", 
     detailURL: "todolist", 
-    liveLink: 'https://todolist-tomigorog.vercel.app/'
+    liveLink: 'https://todolist-tomigorog.vercel.app/',
+    repo: true
   }
   const qamionProject = {
     id: ProjectStyles.ProjectQamion,
     title: "Qamion",
     keySentence: "Logistics optimization software",
     techStack: "Angular, TS, RXJS, HTML, SCSS, Material UI, Leaflet", 
-    detailURL: "todolist", 
-    liveLink: 'https://todolist-tomigorog.vercel.app/'
+    detailURL: "qamion", 
+    liveLink: 'https://qamion.qamcom.com/',
+    repo: false
   }
   return (
     <div className='projects'>

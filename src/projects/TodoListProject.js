@@ -20,8 +20,8 @@ function TodoListProject() {
 
 
     return (
-        <div className={ProjectStyle.RnnR}>
-            <h2 >Daily todolist</h2>
+        <div className={ProjectStyle.pDescription}>
+            <h1 >Daily todolist</h1>
             <h3>Aim of the project</h3>
             <p>Practice React hooks, component based development, file structing, do some basic styling with styled components.
             </p>

@@ -52,6 +52,7 @@
 }
 .ProjectTemplate#ProjectRnnR h2 {
   color: #00c2ce;
+  
 }
 .ProjectTemplate .LinktoProject {
   font-size: 1.5rem;
@@ -97,7 +98,7 @@
   position: absolute;
 }
 
-.RnnR {
+.pDescription {
   font-size: 1.5rem;
   color: white;
   text-align: center;
@@ -107,17 +108,17 @@
   padding-right: 5%;
 }
 
-.RnnR p {
+.pDescription p {
   text-align: center;
 }
 
-.RnnR h3 {
+.pDescription h3 {
   color: #00c2ce;
 }
-.RnnR h4 {
+.pDescription h4 {
   margin-top: 0.9375rem;
 }
-.RnnR li {
+.pDescription li {
   text-decoration: none;
   list-style-type: disc;
   list-style-position: inside;
@@ -131,7 +132,7 @@
   width: 100%;
 }
 
-.RnnR .NoDot {
+.pDescription .NoDot {
   list-style-type: none;
   text-align: center;
 }
@@ -161,10 +162,10 @@
     font-size: 20px;
   }
 
-  .RnnR {
+  .pDescription {
     padding: 0 7.5%;
   }
-  .RnnR p {
+  .pDescription p {
     text-align: left;
   }
   .KeySentence {
@@ -205,7 +206,7 @@
     border-radius: 10px;
   }
 
-  .RnnR {
+  .pDescription {
     padding: 0 10%;
   }
 

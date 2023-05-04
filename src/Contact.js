@@ -18,7 +18,6 @@ function Contact() {
         <label for="name">Name:</label>
         <input onChange={(e) => {
           setUserName(e.target.value)
-          console.log(userName)
         }} type="text" id="name" name="name" placeholder="Your name" required />
         <label for="email">Email:</label>
         <input onChange={(e) => {
@@ -27,12 +26,10 @@ function Contact() {
         <label for="message">Your message:</label>
         <textarea onChange={(e) => {
           setUserMessage(e.target.value)
-          console.log(userMessage)
         }} type="text" id="message" name="message" placeholder='What can I do for you?' required
           rows={5} />
         <button
           onClick={(event) => {
-            // navigate(props.url)
             formSubmit(event)
             navigate("/formsubmitted");
            

@@ -21,8 +21,8 @@ function RnnRProject() {
 
 
   return (
-    <div className={ProjectStyle.RnnR}>
-      <h2 >RnnR</h2>
+    <div className={ProjectStyle.pDescription}>
+      <h1 >RnnR</h1>
       <h3>Goals and beginning</h3>
       <p>During the projects' ideation phase we talked about potentional user groups,
         their motivations and the actions users have to take to reach their goals:
