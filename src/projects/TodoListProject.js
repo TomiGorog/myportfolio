@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectStyle from './CSS-modules/ProjectStyles.module.css'
-import Pagedown from './Pagedown'
+import ProjectStyle from '../CSS-modules/ProjectStyles.module.css'
+import Pagedown from '../Pagedown'
 
 function TodoListProject() {
     const [showButton, setShowButton] = React.useState(false)
